@@ -1,0 +1,41 @@
+{
+  "name": "appebusiness-homepage",
+  "version": "1.0.0",
+  "description": "Breno's website",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",   
+    "prettier": "prettier -write .",
+    "lint": "next lint",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "Breno Oliveira",
+  "license": "MIT",
+  "homepage":"https://github.com/brenowiski/appebusiness.git",
+  "dependencies": {
+    "@chakra-ui/icons": "^1.1.5",
+    "@chakra-ui/react": "^1.8.3",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "framer-motion": "^5.6.0",
+    "gh-pages": "^3.2.3",
+    "next": "^12.0.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "three": "^0.135.0",
+    "three-gltf-loader": "^1.111.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-next": "^12.0.10",
+    "prettier": "^2.5.1"
+  },
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  }
+}
