@@ -70,7 +70,7 @@ const Navbar = props => {
                 mt={{ base: 4, nmd: 0 }}
                 >
                     <LinkItem href="/works" path={path}>
-                        <Button variant="ghost" fontWeight="normal">Trabalho</Button>
+                        <Button variant="link" fontWeight="normal">Trabalho</Button>
                     </LinkItem>
                     <LinkItem 
                     href="https://github.com/brenowiski/appebusiness" 
@@ -78,7 +78,7 @@ const Navbar = props => {
                         <Link 
                         href="https://github.com/brenowiski/appebusiness" >                           
                            <Button 
-                           variant="ghost" 
+                           variant="link" 
                            leftIcon={<Icon as={IoLogoGithub} />}
                            fontWeight="normal"
                            >
