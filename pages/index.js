@@ -160,11 +160,11 @@ const Page = () => {
           </List>
         </Section>
        
-        <Section delay={0.3}>          
+        <Section delay={0.5}>          
           <Paragraph>
-          "Algumas pessoas lêem "Guerra e Paz" e acham que é um simples romance. 
+          &ldquo;Algumas pessoas lêem &ldquo;Guerra e Paz&rdquo; e acham que é um simples romance. 
           Outras pessoas lêem uma embalagem de chiclete e desvendam os segredos 
-          do universo..." - Lex Luthor          
+          do universo...&rdquo; - Lex Luthor          
           </Paragraph>
         </Section>
 
