@@ -70,7 +70,7 @@ const Navbar = props => {
                 mt={{ base: 4, nmd: 0 }}
                 >
                     <LinkItem href="/works" path={path}>
-                        <Button variant="link" fontWeight="normal">Trabalho</Button>
+                        Trabalho
                     </LinkItem>
                     <LinkItem 
                     href="https://github.com/brenowiski/appebusiness" 
