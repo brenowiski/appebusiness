@@ -164,7 +164,7 @@ const Page = () => {
           <Paragraph>
           "Algumas pessoas lêem "Guerra e Paz" e acham que é um simples romance. 
           Outras pessoas lêem uma embalagem de chiclete e desvendam os segredos 
-          do universo..." - Lex Luthor
+          do universo..." - Lex Luthor          
           </Paragraph>
         </Section>
 
