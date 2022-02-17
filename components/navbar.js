@@ -12,9 +12,12 @@ import {
          MenuList,
          MenuButton,
          IconButton,
-         useColorModeValue
+         useColorModeValue,
+         Button,
+         Icon        
 } from '@chakra-ui/react'
 import {HamburgerIcon} from '@chakra-ui/icons'
+import { IoLogoGithub } from 'react-icons/io5'
 import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({ href, path, children }) => {
@@ -67,10 +70,21 @@ const Navbar = props => {
                 mt={{ base: 4, nmd: 0 }}
                 >
                     <LinkItem href="/works" path={path}>
-                        Trabalho
+                        <Button variant="ghost" fontWeight="normal">Trabalho</Button>
                     </LinkItem>
-                    <LinkItem href="https://github.com/brenowiski/appebusiness" path={path}>
-                        <Link href="https://github.com/brenowiski/appebusiness">View Source</Link>
+                    <LinkItem 
+                    href="https://github.com/brenowiski/appebusiness" 
+                    path={path}>
+                        <Link 
+                        href="https://github.com/brenowiski/appebusiness" >                           
+                           <Button 
+                           variant="ghost" 
+                           leftIcon={<Icon as={IoLogoGithub} />}
+                           fontWeight="normal"
+                           >
+                               View Source
+                               </Button>                          
+                         </Link>
                     </LinkItem>
             </Stack>     
             <Box flex={1} align="right">
@@ -91,7 +105,7 @@ const Navbar = props => {
                             <MenuItem as={Link}>Trabalhos</MenuItem>
                         </NextLink>                        
                         <MenuItem as={Link} href="https://github.com/brenowiski/appebusiness">
-                            <Link>View Source</Link>
+                            <Link >View Source</Link>
                         </MenuItem>                                
                      </MenuList>  
                     </Menu>

@@ -19,6 +19,7 @@ import { BioSection, BioYear } from '../components/bio'
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin} from 'react-icons/io5'
 import styled from '@emotion/styled'
 
+
 const Paragraf = styled.span`
   font-size: 13px;
 `
@@ -71,7 +72,7 @@ const Page = () => {
             Trabalho
           </Heading>
           <Paragraph>
-            Breno é um freelance front-end developer situado em Boituva com uma
+              Breno é um freelance front-end developer situado em Boituva com uma
             paixão por desenvolver serviços digitais/projetos pessoais.
             Projetando meios de resolver problemas da vida real com código.
             Quando não está online, ama passar tempo desenhando ou com os
@@ -114,7 +115,7 @@ const Page = () => {
             I ♥
           </Heading>
           <Paragraph>
-            Design Gráfico, Música, Jogos, Desenho, Ilustração.
+            Design Gráfico, Música, O Guia do Mochileiro das Galáxias, Desenho, Ilustração.
           </Paragraph>
         </Section>
 
@@ -158,6 +159,19 @@ const Page = () => {
             </ListItem>
           </List>
         </Section>
+       
+        <Section delay={0.3}>          
+          <Paragraph>
+          "Algumas pessoas lêem "Guerra e Paz" e acham que é um simples romance. 
+          Outras pessoas lêem uma embalagem de chiclete e desvendam os segredos 
+          do universo..." - Lex Luthor
+          </Paragraph>
+        </Section>
+
+        <Box  align="center" fontSize="12" color="whiteAlpha.500">
+        {' © '} 2022    
+      Breno Oliveira. All Rights Reserved.
+        </Box>
       </Container>
     </Layout>
   )
