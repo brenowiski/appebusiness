@@ -1,4 +1,4 @@
-import NextLink from 'next/link'
+import NextLink from "next/link";
 import {
   Button,
   Container,
@@ -7,22 +7,21 @@ import {
   Image,
   Link,
   List,
-  ListItem,  
+  ListItem,
   Icon,
-  useColorModeValue
-} from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
-import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin} from 'react-icons/io5'
-import styled from '@emotion/styled'
-
+  useColorModeValue,
+} from "@chakra-ui/react";
+import { ChevronRightIcon } from "@chakra-ui/icons";
+import Layout from "../components/layouts/article";
+import Section from "../components/section";
+import Paragraph from "../components/paragraph";
+import { BioSection, BioYear } from "../components/bio";
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
+import styled from "@emotion/styled";
 
 const Paragraf = styled.span`
   font-size: 13px;
-`
+`;
 
 const Page = () => {
   return (
@@ -30,7 +29,7 @@ const Page = () => {
       <Container>
         <Box
           borderRadius="lg"
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
           p={3}
           mb={6}
           align="center"
@@ -41,7 +40,7 @@ const Page = () => {
           </Paragraf>
         </Box>
 
-        <Box display={{ md: 'flex' }}>
+        <Box display={{ md: "flex" }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
               Breno Oliveira
@@ -72,7 +71,7 @@ const Page = () => {
             Trabalho
           </Heading>
           <Paragraph>
-              Breno é um freelance front-end developer situado em Boituva com uma
+            Breno é um freelance front-end developer situado em Boituva com uma
             paixão por desenvolver serviços digitais/projetos pessoais.
             Projetando meios de resolver problemas da vida real com código.
             Quando não está online, ama passar tempo desenhando ou com os
@@ -115,7 +114,8 @@ const Page = () => {
             I ♥
           </Heading>
           <Paragraph>
-            Design Gráfico, Música, O Guia do Mochileiro das Galáxias, Desenho, Ilustração.
+            Design Gráfico, Música, O Guia do Mochileiro das Galáxias, Desenho,
+            Ilustração.
           </Paragraph>
         </Section>
 
@@ -125,56 +125,63 @@ const Page = () => {
           </Heading>
           <List>
             <ListItem>
-            <Link href="https://github.com/brenowiski" targe="_blank">
-              <Button 
-              variant="ghost" 
-              colorScheme="teal" 
-              leftIcon={<Icon as={IoLogoGithub}/>}
-              >
-                @brenowiski
+              <Link href="https://github.com/brenowiski" targe="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @brenowiski
                 </Button>
-            </Link>
+              </Link>
             </ListItem>
             <ListItem>
-            <Link href="https://www.instagram.com/brnins/" targe="_blank">
-              <Button 
-              variant="ghost" 
-              colorScheme="teal" 
-              leftIcon={<Icon as={IoLogoInstagram}/>}
-              >
-                @brnins
+              <Link href="https://www.instagram.com/brnins/" targe="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoInstagram} />}
+                >
+                  @brnins
                 </Button>
-            </Link>
+              </Link>
             </ListItem>
             <ListItem>
-            <Link href="https://www.linkedin.com/in/breno-oliveira-798281229/" targe="_blank">
-              <Button 
-              variant="ghost" 
-              colorScheme="teal" 
-              leftIcon={<Icon as={IoLogoLinkedin}/>}
+              <Link
+                href="https://www.linkedin.com/in/breno-oliveira-798281229/"
+                targe="_blank"
               >
-                @Breno Oliveira
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  @Breno Oliveira
                 </Button>
-            </Link>
+              </Link>
             </ListItem>
           </List>
         </Section>
-       
-        <Section delay={0.5}>          
+
+        <Section delay={0.5}>
           <Paragraph>
-          &ldquo;Algumas pessoas lêem &ldquo;Guerra e Paz&rdquo; e acham que é um simples romance. 
-          Outras pessoas lêem uma embalagem de chiclete e desvendam os segredos 
-          do universo...&rdquo; - Lex Luthor          
+            &ldquo;Algumas pessoas lêem &ldquo;Guerra e Paz&rdquo; e acham que é
+            um simples romance. Outras pessoas lêem uma embalagem de chiclete e
+            desvendam os segredos do universo...&rdquo; - Lex Luthor
           </Paragraph>
         </Section>
-
-        <Box  align="center" fontSize="12" color="whiteAlpha.500">
-        {' © '} 2022    
-      Breno Oliveira. All Rights Reserved.
-        </Box>
+        <Section delay={0.6}>
+          <Box
+            align="center"
+            fontSize="12"
+            color={useColorModeValue("blackAlpha.600", "whiteAlpha.400")}
+          >
+            {" © "} 2022 Breno Oliveira. All Rights Reserved.
+          </Box>
+        </Section>
       </Container>
     </Layout>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

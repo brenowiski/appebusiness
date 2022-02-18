@@ -72,6 +72,7 @@ const Navbar = props => {
                     <LinkItem href="/works" path={path}>
                         Trabalho
                     </LinkItem>
+                    
                     <LinkItem 
                     href="https://github.com/brenowiski/appebusiness" 
                     path={path}>
