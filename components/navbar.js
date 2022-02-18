@@ -70,6 +70,7 @@ const Navbar = props => {
                 mt={{ base: 4, nmd: 0 }}
                 >
                     <Button
+                    colorScheme="teal"
                     variant="ghost"                     
                     fontWeight="normal"
                     color={useColorModeValue("blackAlpha.800", "whiteAlpha.900")}>
@@ -83,7 +84,8 @@ const Navbar = props => {
                     path={path}>
                         <Link 
                         href="https://github.com/brenowiski/appebusiness" >                           
-                           <Button 
+                           <Button
+                           colorScheme="teal" 
                            variant="ghost" 
                            leftIcon={<Icon as={IoLogoGithub} />}
                            fontWeight="normal"
