@@ -69,9 +69,14 @@ const Navbar = props => {
                 flexGrow={1}
                 mt={{ base: 4, nmd: 0 }}
                 >
+                    <Button
+                    variant="ghost"                     
+                    fontWeight="normal"
+                    color={useColorModeValue("blackAlpha.800", "whiteAlpha.900")}>
                     <LinkItem href="/works" path={path}>
                         Trabalho
                     </LinkItem>
+                    </Button>
                     
                     <LinkItem 
                     href="https://github.com/brenowiski/appebusiness" 
@@ -79,9 +84,10 @@ const Navbar = props => {
                         <Link 
                         href="https://github.com/brenowiski/appebusiness" >                           
                            <Button 
-                           variant="link" 
+                           variant="ghost" 
                            leftIcon={<Icon as={IoLogoGithub} />}
                            fontWeight="normal"
+                           color={useColorModeValue("blackAlpha.800", "whiteAlpha.900")}
                            >
                                View Source
                                </Button>                          
