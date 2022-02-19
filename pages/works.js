@@ -5,10 +5,7 @@ import Construct from './construct'
 const Works = () => {
   return (
       <Layout>
-    <Container>
-      {/* <Heading as="h3" fontSize={20} mb={4}>
-        Works...        
-      </Heading>       */}
+    <Container>     
       <Construct />      
     </Container>
     </Layout>
