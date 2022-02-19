@@ -10,7 +10,7 @@ const Construct = () => {
 
            <Box my={6} align="center">
                <NextLink href="/">
-                   <Button colorScheme="teal">Volte para a home</Button>
+                   <Button colorScheme="teal">Voltar para a home</Button>
                </NextLink>
            </Box>
        </Container>
