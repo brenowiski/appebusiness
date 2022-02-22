@@ -60,7 +60,7 @@ const VoxelMonkey = () => {
                 scale,
                 -scale,
                 0.01,
-                5000
+                50000
             )
             camera.position.copy(initialCameraPosition)
             camera.lookAt(target)
@@ -96,11 +96,11 @@ const VoxelMonkey = () => {
 
                         camera.position.y = 10
                         camera.position.x = 
-                        p.x & Math.cos(rotSpeed)+ p.z * Math.sin(rotSpeed)
+                            p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
                         camera.position.z = 
-                        p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
+                            p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
                         camera.lookAt(target)
-                    } else{
+                    } else {
                         controls.update()
                     }
 
@@ -108,6 +108,7 @@ const VoxelMonkey = () => {
                 }
                 
                 return () => {
+                    console.log('unmount')
                     cancelAnimationFrame(req)
                     renderer.dispose()
                 }
@@ -119,8 +120,7 @@ const VoxelMonkey = () => {
         return() => {
             window.removeEventListener('resize', handleWindowsResize, false)
         }
-    },
-    [renderer, handleWindowsResize])
+    }, [renderer, handleWindowsResize])
 
     return (
     <Box 
