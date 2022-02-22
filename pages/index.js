@@ -32,11 +32,11 @@ const Page = () => {
           bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
           p={3}
           mb={6}
-          align="center"
+          textAlign="center"
         >
-          Olá, eu sou um desenvolvedor front-end situado no Brasil!
+          Olá, eu sou um desenvolvedor full-stack situado no Brasil!
           <Paragraf>
-            <p>Hello, I&apos;m a front-end developer based in Brazil!</p>
+            <p>Hello, I&apos;m a full-stack developer based in Brazil!</p>
           </Paragraf>
         </Box>
 
@@ -45,7 +45,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Breno Oliveira
             </Heading>
-            <p>Digital Craftzman ( Artist / Developer / Beatbox Master)</p>
+            <p>Digital Craftzman ( Artist / Developer )</p>
           </Box>
           <Box
             flexShrink={0}
@@ -53,16 +53,24 @@ const Page = () => {
             ml={{ md: 6 }}
             align="center"
           >
-            <Image
+            <Box
               borderColor="whiteAlpha.800"
               borderWidth={2}
               borderStyle="solid"
-              maxWidth="100px"
+              w="100px"
+              h="100px"
               display="inline-block"
               borderRadius="full"
-              src="/images/breno.jpg"
-              alt="Profile Image"
-            />
+              overflow="hidden"
+            >
+              <Image
+                width="100%"
+                height="100%"
+                borderRadius="full"
+                src="/images/breno.jpg"
+                alt="Profile Image"
+              />
+            </Box>
           </Box>
         </Box>
 
@@ -71,17 +79,16 @@ const Page = () => {
             Trabalho
           </Heading>
           <Paragraph>
-            Breno é um freelance front-end developer situado em Boituva com uma
+            Breno é um freelance full-stack developer situado em Boituva com uma
             paixão por desenvolver serviços digitais/projetos pessoais.
             Projetando meios de resolver problemas da vida real com código.
-            Quando não está online, ama passar tempo desenhando ou com os
-            amigos.
+            Quando não está online, ama passar tempo com os amigos.
           </Paragraph>
 
           <Box align="center" my={4}>
             <NextLink href="/works">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                My portfolio
+                Meu portfolio
               </Button>
             </NextLink>
           </Box>
@@ -169,6 +176,15 @@ const Page = () => {
             um simples romance. Outras pessoas lêem uma embalagem de chiclete e
             desvendam os segredos do universo...&rdquo; - Lex Luthor
           </Paragraph>
+        </Section>
+        <Section delay={0.6}>
+          <Box align="center" my={4}>
+            <NextLink href="https://github.com/brenowiski/appebusiness">
+              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                Source
+              </Button>
+            </NextLink>
+          </Box>
         </Section>
         <Section delay={0.6}>
           <Box
