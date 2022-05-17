@@ -107,7 +107,7 @@ const Page = () => {
             Inicio de estudos autodidata em programação como front-end.
           </BioSection>
           <BioSection>
-            <BioYear>2022</BioYear>
+            <BioYear>2019</BioYear>
             Transferiu os estudos para back-end e criou Appe Business para
             apresentar o trabalho e conhecimento.
           </BioSection>
