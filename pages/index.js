@@ -103,12 +103,12 @@ const Page = () => {
             Nascido em Pontal - São Paulo.
           </BioSection>
           <BioSection>
-            <BioYear>2020</BioYear>
-            Inicio de estudos autodidata em programação como back-end.
+            <BioYear>2012</BioYear>
+            Inicio de estudos autodidata em programação como front-end.
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
-            Transferiu os estudos para front-end e criou Appe Business para
+            Transferiu os estudos para back-end e criou Appe Business para
             apresentar o trabalho e conhecimento.
           </BioSection>
           <BioSection>
